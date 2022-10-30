@@ -1,0 +1,221 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+:root {
+    --color-grey: grey;
+    --color-lite-grey: rgb(194, 191, 191);
+}
+
+body {
+    background-color: gray;
+}
+
+nav {
+    margin-bottom: .5rem;
+    box-shadow: 0 0 1px 2px black;
+    padding: 0rem 2rem;
+    height: 10vh;
+    background-color: var(--color-lite-grey);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav div {
+    font-size: 1.5rem;
+}
+
+section {
+    width: 50%;
+    margin: auto;
+    background-color: var(--color-lite-grey);
+    padding: 1rem .5rem;
+    text-align: center;
+    min-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+section h2 {
+    font-size: 2.25rem;
+    margin-bottom: 2rem;
+}
+
+section h5 {
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.single-cart-container {
+    width: 100%;
+}
+
+.single-cart {
+    width: 100%;
+    background-color: red;
+}
+
+article {
+    width: 100%;
+    margin-bottom: .5rem;
+    background-color: white;
+    display: flex;
+    align-items: center;
+}
+
+article img {
+    width: 4rem;
+    height: 5rem;
+    object-fit: cover;
+}
+
+.description {
+    margin-left: 1rem;
+    display: inline;
+    text-align: start;
+}
+
+.description h2 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 0%;
+}
+
+.description h4 {
+    font-size: 1rem;
+    font-weight: 300;
+    margin-bottom: 0%;
+}
+
+.description .remove {
+    font-size: .9rem;
+    cursor: pointer;
+    color: brown;
+}
+
+.description .price {
+    padding: .3rem 0;
+}
+
+.total {
+    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-right: 1rem;
+}
+
+.total button {
+    outline: none;
+    border: none;
+    background-color: transparent;
+}
+
+.total button svg {
+    font-size: 1rem;
+    color: brown;
+}
+
+.total b {
+    margin: .1rem 0;
+}
+
+footer {
+    margin-top: 1rem;
+    width: 100%;
+}
+
+footer div {
+    width: 80%;
+    margin: auto;
+    border-top: 1px solid var(--color-grey);
+    padding-top: 1em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+button {
+    cursor: pointer;
+}
+
+.btn-clear {
+    margin-top: 1rem;
+    padding: .3rem 1rem;
+    background-color: var(--color-lite-grey);
+    border-color: brown;
+    outline-color: brown;
+    transition: .3s all;
+}
+
+.btn-clear:hover {
+    background-color: brown;
+}
+
+.Modal {
+    position: fixed;
+    top: 0;
+    left: 0%;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: .9;
+    z-index: 1;
+    background-color: var(--color-grey);
+}
+
+.Modal__container {
+    width: 60%;
+    margin: auto;
+    padding: 1rem;
+    position: absolute;
+    opacity: 1;
+    z-index: 10;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: ; */
+}
+
+.Modal__container h2 {
+    font-size: 1.5rem
+}
+
+.Modal__container div {
+    justify-content: center;
+    display: flex;
+    gap: 0 50px;
+}
+
+.Modal__container div button {
+    z-index: 1000;
+    background-color: brown;
+    padding: .4rem 0;
+    width: 200px;
+    font-weight: 800;
+    transition: .3s all;
+}
+
+.Modal__container div button:hover {
+    background-color: rgb(192, 77, 77);
+}
+
+@media screen and (max-width:1050px) {
+    section {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width:400px) {
+    section {
+        width: 95%;
+    }
+}
